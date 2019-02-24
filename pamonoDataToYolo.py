@@ -4,6 +4,8 @@ import copy
 import csv
 from io import StringIO
 
+# This file only creates the annotations for the LAST image (with all particles) in a pamono dataset folder 
+
 # set dimensions of image
 #img100_x = 750
 #img100_y = 230
