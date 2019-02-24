@@ -1,0 +1,32 @@
+">" means in text file
+
+create obj.data file:
+
+>classes= 1
+>train  = data/Data-200nm/train.txt
+>valid  = data/Data-200nm/test.txt
+>names = obj.names
+>backup = backup/
+
+create obj.names file:
+
+>NFPA
+
+for dataset:
+
+- put everything into one folder
+- all training images
+- all annotations, which have the form  class, xmid, ymid, w, h (all relative to image size)
+- test.txt which lists all images for test
+- train.txt which lists all images for train
+(list all files with relative paths to darknet executable)
+- for negative examples, copy the image and leave the corresponding .txt empty
+
+ANCHORS:
+- get gen_anchors.py from somewhere 
+- python3 gen_anchors.py -filelist data/firstTry200nm/train.txt  -output_dir anch -num_clusters 5
+- copy anchors into cfg file of net description
+
+TRAIN:
+./darknet detector train cfg/obj.data cfg/yolov2-tiny-PAMONO200.cfg
+
