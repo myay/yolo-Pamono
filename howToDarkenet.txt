@@ -17,7 +17,7 @@ create obj.data file:
 
 create obj.names file:
 
->NFPA
+>0
 
 for dataset:
 
@@ -36,7 +36,9 @@ ANCHORS:
 - copy anchors into cfg file of net description
 
 TRAIN:
+- from scratch:
 ./darknet detector train cfg/obj.data cfg/yolov2-tiny-PAMONO200.cfg
+- continue with trained weights:
 ./darknet detector train cfg/obj.data cfg/yolov2-tiny.cfg backup/yolov2-tiny.backup
 
 TEST:
