@@ -1,3 +1,7 @@
+in Makefile set GPU=1 and
+export LD_LIBRARY_PATH=/usr/local/cuda/lib
+export PATH=$PATH:/usr/local/cuda/bin
+
 ">" means in text file
 
 create obj.data file:
