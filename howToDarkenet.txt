@@ -1,6 +1,9 @@
-in Makefile set GPU=1 and
-export LD_LIBRARY_PATH=/usr/local/cuda/lib
-export PATH=$PATH:/usr/local/cuda/bin
+install darknet
+- in Makefile set GPU=1
+- export LD_LIBRARY_PATH=/usr/local/cuda/lib
+- export PATH=$PATH:/usr/local/cuda/bin
+- check cudnn
+- make
 
 ">" means in text file
 
