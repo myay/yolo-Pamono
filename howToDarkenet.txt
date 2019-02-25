@@ -31,4 +31,4 @@ TRAIN:
 ./darknet detector train cfg/obj.data cfg/yolov2-tiny-PAMONO200.cfg
 
 TEST:
-./darknet detector test cfg/obj.data cfg/v2-tiny-lessfilters2.cfg backup/v2-tiny-lessfilters2_900.weights data/all200nm/test/capture2013-04-10-1993.png
+./darknet detector test cfg/obj.data cfg/v2-tiny-lessfilters2.cfg backup/v2-tiny-lessfilters2_900.weights data/all200nm/test/capture2013-04-10-1993.png -thresh 0.95
