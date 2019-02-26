@@ -34,6 +34,9 @@ ANCHORS:
 - get gen_anchors.py from somewhere 
 - python3 gen_anchors.py -filelist data/firstTry200nm/train.txt  -output_dir anch -num_clusters 5
 - copy anchors into cfg file of net description
+- in AlexeyAB Darknet for Yolo v2 use: ./darknet detector calc_anchors data/hand.data -num_of_clusters 5 -width 22 -height 5 -show
+  704/32=22
+  160/32=5
 
 TRAIN:
 - from scratch:
@@ -42,5 +45,7 @@ TRAIN:
 ./darknet detector train cfg/obj.data cfg/yolov2-tiny.cfg backup/yolov2-tiny.backup
 
 TEST:
+- for pjreddie darknet
 ./darknet detector test cfg/obj.data cfg/v2-tiny-lessfilters2.cfg backup/v2-tiny-lessfilters2_900.weights data/all200nm/test/capture2013-04-10-1993.png -thresh 0.95
-(data/Data-200nm-overfit/test/capture2013-04-11-1747.png needed for alexeyab test)
+- for alexeyab darknet path of image file is needed
+data/Data-200nm-overfit/test/capture2013-04-11-1747.png 
