@@ -29,6 +29,8 @@ for dataset:
 (list all files with relative paths to darknet executable)
 - for negative examples, copy the image and leave the corresponding .txt empty
 - in folder with particle component: python3 pamonoDataToYolo.py --csvFileName=NanoSynthMLPolygonFormFactors.csv --imageWidth=1080 --imageHeight=145 --prefix=imagesAndAnnotations
+- useful, in darknet root do: ls -1 data/Data-200nm/unseen/*.png > data/Data-200nm/unseen/unseen.txt
+
 
 ANCHORS:
 - get gen_anchors.py from somewhere 
