@@ -34,7 +34,7 @@ for dataset:
 
 ANCHORS:
 - get gen_anchors.py from somewhere 
-- for pjreddie darknet, get gen_anchors.py and run: pypython3 gen_anchors.py -filelist data/firstTry200nm/train.txt  -output_dir anch -num_clusters 5
+- for pjreddie darknet, get gen_anchors.py and run: python3 gen_anchors.py -filelist data/firstTry200nm/train.txt  -output_dir anch -num_clusters 5
 - in AlexeyAB Darknet for Yolo v2 use: ./darknet detector calc_anchors data/hand.data -num_of_clusters 5 -width 22 -height 5 -show
   704/32=22
   160/32=5
