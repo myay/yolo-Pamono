@@ -47,5 +47,8 @@ TRAIN:
 TEST:
 - for pjreddie darknet
 ./darknet detector test cfg/obj.data cfg/v2-tiny-lessfilters2.cfg backup/v2-tiny-lessfilters2_900.weights data/all200nm/test/capture2013-04-10-1993.png -thresh 0.95
+- for alexeyab map
+./darknet detector map cfg/obj.data  cfg/yolov2-tiny-nd-v2-overfit.cfg backup/yolov2-tiny-nd-v2-overfit_last.weights
 - for alexeyab darknet path of image file is needed
 data/Data-200nm-overfit/test/capture2013-04-11-1747.png 
+
