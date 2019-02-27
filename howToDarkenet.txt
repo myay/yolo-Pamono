@@ -1,3 +1,26 @@
+Nvidia-gpu
+- find out gpu info: nvidia-smi
+- install CUDA
+- install cuDNN version fitting to CUDA drivers and Ubuntu version
+  download deb files for runtime, dev and examples
+  Install the runtime library, for example:
+  sudo dpkg -i libcudnn7_7.0.3.11-1+cuda9.0_amd64.deb
+  Install the developer library, for example:
+  sudo dpkg -i libcudnn7-devel_7.0.3.11-1+cuda9.0_amd64.deb
+  Install the code samples and the cuDNN Library User Guide, for example:
+  sudo dpkg -i libcudnn7-doc_7.0.3.11-1+cuda9.0_amd64.deb
+  Verifying:
+  Copy the cuDNN sample to a writable path:
+  cp -r /usr/src/cudnn_samples_v7/ $HOME
+  Go to the writable path:
+  cd  $HOME/cudnn_samples_v7/mnistCUDNN
+  Compile the mnistCUDNN sample:
+  make clean && make:
+  Run the mnistCUDNN sample:
+  ./mnistCUDNN
+  If cuDNN is properly installed and running on your Linux system, you will see a message similar to the following:
+  Test passed!
+
 install darknet
 - in Makefile set GPU=1
 - export LD_LIBRARY_PATH=/usr/local/cuda/lib
