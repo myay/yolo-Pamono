@@ -68,6 +68,7 @@ TRAIN:
 ./darknet detector train cfg/obj.data cfg/yolov2-tiny-PAMONO200.cfg
 - continue with trained weights:
 ./darknet detector train cfg/obj.data cfg/yolov2-tiny.cfg backup/yolov2-tiny.backup
+- to modify loss: https://stats.stackexchange.com/questions/287486/yolo-loss-function-explanation
 
 TEST:
 - for pjreddie darknet
