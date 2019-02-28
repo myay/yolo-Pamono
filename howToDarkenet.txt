@@ -70,6 +70,7 @@ TRAIN:
 ./darknet detector train cfg/obj.data cfg/yolov2-tiny.cfg backup/yolov2-tiny.backup
 - to modify loss: https://stats.stackexchange.com/questions/287486/yolo-loss-function-explanation
 - modify training params: https://stackoverflow.com/questions/50390836/understanding-darknets-yolo-cfg-config-files
+- other params: https://github.com/AlexeyAB/darknet/issues/279
 
 TEST:
 - for pjreddie darknet
