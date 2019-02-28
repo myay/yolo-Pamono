@@ -79,4 +79,6 @@ TEST:
 ./darknet detector map cfg/obj.data  cfg/yolov2-tiny-nd-v2-overfit.cfg backup/yolov2-tiny-nd-v2-overfit_last.weights
 - for alexeyab darknet path of image file is needed
 data/Data-200nm-overfit/test/capture2013-04-11-1747.png 
+- batch predict: ./darknet detector test cfg/coco.data cfg/yolov3.cfg yolov3.weights -ext_output -dont_show < data/train.txt > result.txt
+
 
