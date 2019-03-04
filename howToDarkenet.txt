@@ -21,7 +21,7 @@ Nvidia-gpu
   If cuDNN is properly installed and running on your Linux system, you will see a message similar to the following:
   Test passed!
   
-Install OpenCV:
+Install OpenCV 3.4.0:
 - install dependencies
 - wget https://github.com/opencv/opencv/archive/3.4.0.zip -O opencv-3.4.0.zip
 - wget https://github.com/opencv/opencv_contrib/archive/3.4.0.zip -O opencv_contrib-3.4.0.zip
