@@ -52,7 +52,7 @@ create obj.names file:
 
 >0
 
-for dataset:
+for dataset configurations:
 
 - put everything into one folder
 - all training images
