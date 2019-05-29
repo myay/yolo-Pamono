@@ -9,7 +9,7 @@ import glob
 import sys
 from shutil import copyfile
 
-# copy this file in the folder with the images and the annotation file and run it
+# copy this file in the folder with the images and the annotation file and run it from there
 
 # call with python3 pamonoDataToYolo.py --csvFileName=NanoSynthMLPolygonFormFactors.csv --imageWidth=1080 --imageHeight=145 --prefix=imagesAndAnnotations
 
